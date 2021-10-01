@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="stylesheet" href="simple-grid/simple-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="container center">
+        <h1>Let's play Tic Tac Toe!</h1>
+        <h2>How to play the game: ....</h2>
+    </header>
+
+    <main class="grid-container center">
+        <div class="row">
+            <input type="text" id="box1" class="col-4">
+            <input type="text" id="box2" class="col-4">
+            <input type="text" id="box3" class="col-4">
+            <input type="text" id="box4" class="col-4">
+            <input type="text" id="box5" class="col-4">
+            <input type="text" id="box6" class="col-4">
+            <input type="text" id="box7" class="col-4">
+            <input type="text" id="box8" class="col-4">
+            <input type="text" id="box9" class="col-4">
+
+            <button id="nextBtn">Next</button>
+        </div>
+    </main>
+
+    <footer class="container center">
+        <div>Player turn: <span id="turn">c</span></div>
+        <div id="win">Player -- wins!</div>
+        <button>Replay</button>
+    </footer>
+    
+    <script src="js/dom.js"></script>
+    <script src="js/factory-func.js"></script>
+</body>
+</html>
