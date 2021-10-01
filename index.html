@@ -10,20 +10,20 @@
 <body>
     <header class="container center">
         <h1>Let's play Tic Tac Toe!</h1>
-        <h2>How to play the game: ....</h2>
+        <p id="instructions">How to play the game:...</p>
     </header>
 
     <main class="grid-container center">
         <div class="row">
-            <input type="text" id="box1" class="col-4">
-            <input type="text" id="box2" class="col-4">
-            <input type="text" id="box3" class="col-4">
-            <input type="text" id="box4" class="col-4">
-            <input type="text" id="box5" class="col-4">
-            <input type="text" id="box6" class="col-4">
-            <input type="text" id="box7" class="col-4">
-            <input type="text" id="box8" class="col-4">
-            <input type="text" id="box9" class="col-4">
+            <input type="text" id="box1" class="col-4 center">
+            <input type="text" id="box2" class="col-4 center">
+            <input type="text" id="box3" class="col-4 center">
+            <input type="text" id="box4" class="col-4 center">
+            <input type="text" id="box5" class="col-4 center">
+            <input type="text" id="box6" class="col-4 center">
+            <input type="text" id="box7" class="col-4 center">
+            <input type="text" id="box8" class="col-4 center">
+            <input type="text" id="box9" class="col-4 center">
 
             <button id="nextBtn">Next</button>
         </div>
@@ -31,11 +31,11 @@
 
     <footer class="container center">
         <div>Player turn: <span id="turn">c</span></div>
-        <div id="win">Player -- wins!</div>
+        <div id="win"></div>
         <button>Replay</button>
     </footer>
     
-    <script src="js/dom.js"></script>
     <script src="js/factory-func.js"></script>
+    <script src="js/dom.js"></script>
 </body>
 </html>
