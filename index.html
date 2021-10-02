@@ -10,7 +10,7 @@
 <body>
     <header class="container center">
         <h1>Let's play Tic Tac Toe!</h1>
-        <p id="instructions">How to play the game:...</p>
+        <div id="instructions">How to play the game:...</div>
     </header>
 
     <main class="grid-container center">
@@ -24,15 +24,18 @@
             <input type="text" id="box7" class="col-4 center">
             <input type="text" id="box8" class="col-4 center">
             <input type="text" id="box9" class="col-4 center">
+        </div>
 
-            <button id="nextBtn">Next</button>
+        <div id="buttons">
+            <button id="nextBtn" class="button-size">Next</button>
+            <button class="button-size">Replay</button>
         </div>
     </main>
 
-    <footer class="container center">
-        <div>Player turn: <span id="turn">c</span></div>
+    <footer class="results-container center">
+        <div id="turn">Player turn:</div>
         <div id="win"></div>
-        <button>Replay</button>
+        <div class="error-messages">Error</div>
     </footer>
     
     <script src="js/factory-func.js"></script>

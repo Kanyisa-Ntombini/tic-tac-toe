@@ -1,21 +1,11 @@
 function Play() {
-    let theLetter = '';
-    let inputNumberError = '';
-
-    function setLetter(letter) {
-        if (isNaN(letter)) {
-            theLetter = letter.toLowerCase();
-        } else {
-            inputNumberError = 'Please do not enter a number'
-        }
+    
+    function checkLetterLength(letter) {
+        return letter.length == 1;
     }
 
-    function checkLetterLength() {
-        return theLetter.length == 1;
-    }
-
-    function checkLetterChar() {
-        if (theLetter == 'x' || theLetter == 'o') {
+    function checkLetterChar(letter) {
+        if (letter == 'x' || letter == 'o') {
             return true;
         } else {
             return false;
@@ -30,18 +20,10 @@ function Play() {
         return inputNumberError;
     }
 
-    function getLetter() {
-        return theLetter;
-    }
-
-
-
     return {
-        setLetter,
         checkLetterLength,
         checkLetterChar,
         letterErrorMessage,
-        numberErrorMessage,
-        getLetter
+        numberErrorMessage
     }
 }
