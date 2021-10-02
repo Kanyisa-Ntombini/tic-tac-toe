@@ -5,7 +5,7 @@ function Play() {
     }
 
     function checkLetterChar(letter) {
-        if (letter == 'x' || letter == 'o') {
+        if (letter == 'x' || letter == 'X' || letter == 'O' || letter == 'o') {
             return true;
         } else {
             return false;

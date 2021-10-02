@@ -1,6 +1,7 @@
 let player = Play();
 
 function clickBox() {
+    document.querySelector('.error-messages').innerHTML = '';
 
     //HTML ELEMENTS
     const box1 = document.getElementById('box1').value;
@@ -15,6 +16,7 @@ function clickBox() {
 
     const win = document.getElementById('win');
     const errorMessages = document.querySelector('.error-messages');
+    const turn = document.getElementById('turn');
 
     //New variables for checked letters
 
@@ -124,6 +126,16 @@ function clickBox() {
 
     else if (b3 == 'o' && b5 == 'o' && b7 == 'o') {
         win.innerHTML  = 'Player O wins';
+    }
+
+    //Next turn
+    if (b1=='x' || b2=='x' || b3=='x' || b4=='x' || b5=='x' || b6=='x' || b7=='x' || b8=='x' || b9=='x') {
+        turn.classList.add('blue');
+        turn.innerHTML = 'Player O turn';
+    }
+    else if (b1=='o' || b2=='o' || b3=='o' || b4=='o' || b5=='o' || b6=='o' || b7=='o' || b8=='o' || b9=='o') {
+        turn.classList.add('yellow');
+        turn.innerHTML = 'Player X turn';
     }
 }
 

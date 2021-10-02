@@ -36,3 +36,13 @@ body {
 .error-messages {
     color: crimson;
 }
+
+.blue {
+    background-color: white;
+    color: blue;
+}
+
+.yellow {
+    background-color: white;
+    color: orange;
+}
