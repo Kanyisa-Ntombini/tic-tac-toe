@@ -6,3 +6,5 @@
 * Should give an error if person doesn't insert x or o - DONE
 
 ### Interview: Add a computer player
+
+### Planning: https://miro.com/app/board/o9J_ltfpCbs=/

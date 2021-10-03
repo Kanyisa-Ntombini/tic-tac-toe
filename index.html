@@ -8,37 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header class="container center">
+
+    <div class="options-container">
         <h1>Let's play Tic Tac Toe!</h1>
-        <div id="instructions">How to play the game:...</div>
-    </header>
 
-    <main class="grid-container center">
-        <div class="row">
-            <input type="text" id="box1" class="col-4 center">
-            <input type="text" id="box2" class="col-4 center">
-            <input type="text" id="box3" class="col-4 center">
-            <input type="text" id="box4" class="col-4 center">
-            <input type="text" id="box5" class="col-4 center">
-            <input type="text" id="box6" class="col-4 center">
-            <input type="text" id="box7" class="col-4 center">
-            <input type="text" id="box8" class="col-4 center">
-            <input type="text" id="box9" class="col-4 center">
-        </div>
+        <div >Would you like to play against a friend or computer?</div>
+        <br>
 
-        <div id="buttons">
-            <button id="nextBtn" class="button-size">Next</button>
-            <button class="button-size">Replay</button>
-        </div>
-    </main>
-
-    <footer class="results-container center">
-        <div id="turn"></div>
-        <div id="win"></div>
-        <div class="error-messages"></div>
-    </footer>
-    
-    <script src="js/factory-func.js"></script>
-    <script src="js/dom.js"></script>
+        <ul>
+            <li class="btn"><a href="player-options/friend/indexFriend.html">FRIEND</a></li>
+            <li class="btn"><a href="player-options/computer/indexComputer.html">COMPUTER</a></li>
+        </ul>
+    </div>
 </body>
 </html>

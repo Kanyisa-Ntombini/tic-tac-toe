@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: plum;
+}
+
+.instructions {
+    font-size: 2rem;
+}
+
+.grid-container {
+    width: 15%;
+}
+
+.buttons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.button-size {
+    width: 3.5rem;
+}
+
+.win {
+    color: green;
+}
+
+.results-container {
+    margin: 2rem;
+}
+
+.error-messages {
+    color: crimson;
+}
+
+.blue {
+    background-color: white;
+    color: blue;
+}
+
+.yellow {
+    background-color: white;
+    color: orange;
+}

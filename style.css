@@ -6,43 +6,26 @@ body {
     background-color: plum;
 }
 
-
-.grid-container {
-    width: 15%;
-}
-
-
-#instructions {
-    font-size: 1rem;
-}
-
-#buttons {
-    margin-top: 1rem;
+.options-container {
     text-align: center;
 }
 
-.button-size {
-    width: 3.5rem;
-}
-
-#win {
-    color: green;
-}
-
-.results-container {
-    margin: 2rem;
-}
-
-.error-messages {
+ul li {
+    list-style-type: none; 
+    display: inline;
+    margin-right: 1rem; /*help with spacing out title words*/
+    margin-left: 1rem;
     color: crimson;
 }
 
-.blue {
-    background-color: white;
-    color: blue;
+ul li a { /*about me, health, body, etc*/
+    text-decoration: none;
+    color: #003366;
 }
 
-.yellow {
-    background-color: white;
-    color: orange;
+.btn {
+    background-color: rgb(252, 233, 252);
+    border: 0.1rem solid black;
+    padding: 1rem;
+    border-radius: 1rem;
 }

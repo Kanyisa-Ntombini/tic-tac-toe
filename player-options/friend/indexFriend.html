@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friend</title>
+    <link rel="stylesheet" href="../simple-grid/simple-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../options.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="container center">
+        <h1>Player X vs Player O</h1>
+        <div class="instructions">How to play the game:</div>
+        <ol class="justify">
+            <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+            <li>You start and type in X in one of the boxed. Afterwards click on next. Your friend will type O. Players take turns putting their marks in empty squares.</li>
+            <li>The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.</li>
+            <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+        </ol>
+    </header>
+
+    <main class="grid-container center">
+        <div class="row">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+            <input type="text" class="col-4 center box1">
+        </div>
+
+        <div id="buttons">
+            <button class="button-size nextBtn">Next</button>
+            <button class="button-size restartBtn">Restart</button>
+        </div>
+    </main>
+
+    <footer class="results-container center">
+        <div class="turn"></div>
+        <div class="win"></div>
+        <div class="error-messages"></div>
+    </footer>
+    
+    <script src="js/friend-factory-func.js"></script>
+    <script src="js/friend-dom.js"></script>
+</body>
+</html>
