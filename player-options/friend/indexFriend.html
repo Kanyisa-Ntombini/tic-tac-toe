@@ -11,25 +11,27 @@
     <header class="container center">
         <h1>Player X vs Player O</h1>
         <div class="instructions">How to play the game:</div>
+        <!--
         <ol class="justify">
             <li>The game is played on a grid that's 3 squares by 3 squares.</li>
             <li>You start and type in X in one of the boxed. Afterwards click on next. Your friend will type O. Players take turns putting their marks in empty squares.</li>
             <li>The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.</li>
             <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
         </ol>
+        -->
     </header>
 
     <main class="grid-container center">
         <div class="row">
-            <input type="text" class="col-4 center box1" onclick="func1()">
-            <input type="text" class="col-4 center box2">
-            <input type="text" class="col-4 center box3">
-            <input type="text" class="col-4 center box4">
-            <input type="text" class="col-4 center box5">
-            <input type="text" class="col-4 center box6">
-            <input type="text" class="col-4 center box7">
-            <input type="text" class="col-4 center box8">
-            <input type="text" class="col-4 center box9">
+            <input type="text" class="col-4 center box1" onclick="func1(); winFunc()" readonly>
+            <input type="text" class="col-4 center box2" onclick="func2(); winFunc()" readonly>
+            <input type="text" class="col-4 center box3" onclick="func3(); winFunc()" readonly>
+            <input type="text" class="col-4 center box4" onclick="func4(); winFunc()" readonly>
+            <input type="text" class="col-4 center box5" onclick="func5(); winFunc()" readonly>
+            <input type="text" class="col-4 center box6" onclick="func6(); winFunc()" readonly>
+            <input type="text" class="col-4 center box7" onclick="func7(); winFunc()" readonly>
+            <input type="text" class="col-4 center box8" onclick="func8(); winFunc()" readonly>
+            <input type="text" class="col-4 center box9" onclick="func9(); winFunc()" readonly>
         </div>
 
         <div id="buttons">
@@ -40,7 +42,7 @@
 
     <footer class="results-container center">
         <div class="turn">turn messages</div>
-        <div class="win">Winner message</div>
+        <div class="win"></div>
         <div class="error-messages">error messages</div>
     </footer>
     
