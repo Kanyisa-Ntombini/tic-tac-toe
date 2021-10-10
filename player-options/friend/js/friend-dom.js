@@ -1,9 +1,6 @@
 let player = Play();
 
 function winFunc() {
-    document.querySelector('.error-messages').innerHTML = '';
-    document.querySelector('.turn').innerHTML = '';
-
     //HTML ELEMENTS
     const box1 = document.querySelector('.box1').value;
     const box2 = document.querySelector('.box2').value;
@@ -15,10 +12,7 @@ function winFunc() {
     const box8 = document.querySelector('.box8').value;
     const box9 = document.querySelector('.box9').value;
 
-    const win = document.querySelector('.win');
-    const errorMessages = document.querySelector('.error-messages');
-    const turn = document.querySelector('.turn');
-
+    //Player X Wins
     if (box1=='X' && box2 == 'X' && box3 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
         document.querySelector('.box4').disabled = true;
@@ -46,6 +40,128 @@ function winFunc() {
         document.querySelector('.box5').disabled = true;
         document.querySelector('.box6').disabled = true;
     }
+    if (box1=='X' && box4 == 'X' && box7 == 'X') {
+        document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box8').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box2=='X' && box5 == 'X' && box8 == 'X') {
+        document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box3=='X' && box6 == 'X' && box9 == 'X') {
+        document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+    else if (box1=='X' && box5 == 'X' && box9 == 'X') {
+        document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+    else if (box3=='X' && box5 == 'X' && box7 == 'X') {
+        document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+
+    //Player 0 wins
+    if (box1=='0' && box2 == '0' && box3 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box4=='0' && box5 == '0' && box6 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box7=='0' && box8 == '0' && box9 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box6').disabled = true;
+    }
+    if (box1=='0' && box4 == '0' && box7 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box8').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box2=='0' && box5 == '0' && box8 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box9').disabled = true;
+    }
+    else if (box3=='0' && box6 == '0' && box9 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+    else if (box1=='0' && box5 == '0' && box9 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box3').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box6').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+    else if (box3=='0' && box5 == '0' && box7 == '0') {
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.box1').disabled = true;
+        document.querySelector('.box2').disabled = true;
+        document.querySelector('.box4').disabled = true;
+        document.querySelector('.box5').disabled = true;
+        document.querySelector('.box7').disabled = true;
+        document.querySelector('.box8').disabled = true;
+    }
+    else if ((box1=='X' || box1=='0') && (box2=='X' || box2=='0') && (box3=='X' || box3=='0') && (box4=='X' || box4=='0') && (box5=='X' || box5=='0') && (box6=='X' || box6=='0') && (box7=='X' || box7=='0') && (box8=='X' || box8=='0') && (box9=='X' || box9=='0')) {
+        document.querySelector('.win').innerHTML  = 'Its a tie!';
+    }
 
     else {
         if (flag == 1) {
@@ -55,143 +171,34 @@ function winFunc() {
         }
         
     }
-
-    //Check if X or O is inserted
-
-    /*let b1, b2, b3, b4, b5, b6, b7, b8, b9;
-    
-
-    if (box1=='x' || box1=='X' || box1=='o' || box1=='O') {
-        console.log('box 1 if');
-        b1 = box1.toLowerCase();
-    } else if (box2=='x' || box2=='X' || box2=='o' || box2=='O') {
-        console.log('box 2 if');
-        b2 = box2.toLowerCase();
-    } else if (box3=='x' || box3=='X' || box3=='o' || box3=='O') {
-        console.log('box 3 if');
-        b3 = box3.toLowerCase();
-    } else {
-        console.log('else');
-        document.querySelector('.error-messages').innerHTML = 'Please enter X or O';
-    }
-
-    /*if (player.checkLetterLength(box1) && player.checkLetterChar(box1)) {
-        b1 = box1.toLowerCase();
-    } else if (! player.checkLetterLength(box1) || ! player.checkLetterChar(box1)) {
-        errorMessages.innerHTML = 'Please enter X or O';
-        console.log(box1);
-        console.log('else');
-    }
-
-    if (player.checkLetterLength(box2) && player.checkLetterChar(box2)) {
-        b2 = box2.toLowerCase();
-    }  
-
-    if (player.checkLetterLength(box3) && player.checkLetterChar(box3)) {
-        b3 = box3.toLowerCase();
-    }  
-
-    if (player.checkLetterLength(box4) && player.checkLetterChar(box4)) {
-        b4 = box4.toLowerCase();
-    }    
-
-    if (player.checkLetterLength(box5) && player.checkLetterChar(box5)) {
-        b5 = box5.toLowerCase();
-    }  
-
-    if (player.checkLetterLength(box6) && player.checkLetterChar(box6)) {
-        b6 = box6.toLowerCase();
-    }
-
-    if (player.checkLetterLength(box7) && player.checkLetterChar(box7)) {
-        b7 = box7.toLowerCase();
-    }    
-
-    if (player.checkLetterLength(box8) && player.checkLetterChar(box8)) {
-        b8 = box8.toLowerCase();
-    }  
-
-    if (player.checkLetterLength(box9) && player.checkLetterChar(box9)) {
-        b9 = box9.toLowerCase();
-    }
-    
-    //Player X
-    
-    
-
-    
-    
-    else if (b1 == 'x' && b4 == 'x' && b7 == 'x') {
-        win.innerHTML  = 'Player X wins';
-    }
-
-    else if (b2 == 'x' && b5 == 'x' && b8 == 'x') {
-        win.innerHTML  = 'Player X wins';
-    }
-
-    else if (b3 == 'x' && b6 == 'x' && b9 == 'x') {
-        win.innerHTML  = 'Player X wins';
-    }
-    
-    else if (b1 == 'x' && b5 == 'x' && b9 == 'x') {
-        win.innerHTML  = 'Player X wins';
-    }
-
-    else if (b3 == 'x' && b5 == 'x' && b7 == 'x') {
-        win.innerHTML  = 'Player X wins';
-    }
-
-    //Player O
-    
-    if (b1 == 'o' && b2 == 'o' && b3 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    else if (b4 == 'o' && b5 == 'o' && b6 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    else if (b7 == 'o' && b8 == 'o' && b9 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-    
-    else if (b1 == 'o' && b4 == 'o' && b7 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    else if (b2 == 'o' && b5 == 'o' && b8 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    else if (b3 == 'o' && b6 == 'o' && b9 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-    
-    else if (b1 == 'o' && b5 == 'o' && b9 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    else if (b3 == 'o' && b5 == 'o' && b7 == 'o') {
-        win.innerHTML  = 'Player O wins';
-    }
-
-    //Next turn
-    if (b1=='x' || b2=='x' || b3=='x' || b4=='x' || b5=='x' || b6=='x' || b7=='x' || b8=='x' || b9=='x') {
-        turn.classList.add('blue');
-        turn.innerHTML = 'Player O turn';
-    }
-    else if (b1=='o' || b2=='o' || b3=='o' || b4=='o' || b5=='o' || b6=='o' || b7=='o' || b8=='o' || b9=='o') {
-        turn.classList.add('yellow');
-        turn.innerHTML = 'Player X turn';
-    }
-    alert('next');*/
 }
 
-/* Restart Function */
+function restartFunc() {
+    /*location.reload();*/
 
-/*function restartFunc() {
-    alert('Restart');
-}*/
+    document.querySelector('.box1').value = '';
+    document.querySelector('.box2').value = '';
+    document.querySelector('.box3').value = '';
+    document.querySelector('.box4').value = '';
+    document.querySelector('.box5').value = '';
+    document.querySelector('.box6').value = '';
+    document.querySelector('.box7').value = '';
+    document.querySelector('.box8').value = '';
+    document.querySelector('.box9').value = '';
+
+    document.querySelector('.box1').disabled = false;
+    document.querySelector('.box2').disabled = false;
+    document.querySelector('.box3').disabled = false;
+    document.querySelector('.box4').disabled = false;
+    document.querySelector('.box5').disabled = false;
+    document.querySelector('.box6').disabled = false;
+    document.querySelector('.box7').disabled = false;
+    document.querySelector('.box8').disabled = false;
+    document.querySelector('.box9').disabled = false;
+
+    document.querySelector('.win').innerHTML  = '';
+    document.querySelector('.turn').innerHTML  = '';
+}
 
 flag = 1;
 

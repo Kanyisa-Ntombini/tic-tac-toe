@@ -10,41 +10,32 @@ body{
     font-size: 2rem;
 }
 
+li{
+    font-size:1rem;
+    font-weight:200;
+    line-height:1.8
+}
+
 .grid-container {
     width: 15%;
 }
 
 input[type=text]:disabled {
-    background: red;
+    background: powderblue;
   }
 
-.buttons {
+.restartBtn {
     margin-top: 1rem;
     text-align: center;
-}
-
-.button-size {
     width: 3.5rem;
 }
 
-/*.win {
+.win {
     color: green;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .results-container {
-    margin: 2rem;
+    margin: 1rem;
 }
-
-.error-messages {
-    color: black;
-}
-
-.blue {
-    background-color: white;
-    color: blue;
-}
-
-.yellow {
-    background-color: white;
-    color: orange;
-}*/
