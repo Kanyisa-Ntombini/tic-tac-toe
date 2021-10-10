@@ -23,7 +23,7 @@ body{
     width: 3.5rem;
 }
 
-.win {
+/*.win {
     color: green;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 
 .error-messages {
-    color: crimson;
+    color: black;
 }
 
 .blue {
@@ -43,4 +43,4 @@ body{
 .yellow {
     background-color: white;
     color: orange;
-}
+}*/
