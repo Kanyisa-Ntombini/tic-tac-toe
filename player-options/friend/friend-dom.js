@@ -1,5 +1,3 @@
-let player = Play();
-
 function winFunc() {
     //HTML ELEMENTS
     const box1 = document.querySelector('.box1').value;
