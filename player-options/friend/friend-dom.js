@@ -13,6 +13,7 @@ function winFunc() {
     //Player X Wins
     if (box1=='X' && box2 == 'X' && box3 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box4').disabled = true;
         document.querySelector('.box5').disabled = true;
         document.querySelector('.box6').disabled = true;
@@ -22,6 +23,7 @@ function winFunc() {
     }
     else if (box4=='X' && box5 == 'X' && box6 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -31,6 +33,7 @@ function winFunc() {
     }
     else if (box7=='X' && box8 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -40,6 +43,7 @@ function winFunc() {
     }
     if (box1=='X' && box4 == 'X' && box7 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box5').disabled = true;
@@ -49,6 +53,7 @@ function winFunc() {
     }
     else if (box2=='X' && box5 == 'X' && box8 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -58,6 +63,7 @@ function winFunc() {
     }
     else if (box3=='X' && box6 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -67,6 +73,7 @@ function winFunc() {
     }
     else if (box1=='X' && box5 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -76,6 +83,7 @@ function winFunc() {
     }
     else if (box3=='X' && box5 == 'X' && box7 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -87,6 +95,7 @@ function winFunc() {
     //Player 0 wins
     if (box1=='0' && box2 == '0' && box3 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box4').disabled = true;
         document.querySelector('.box5').disabled = true;
         document.querySelector('.box6').disabled = true;
@@ -96,6 +105,7 @@ function winFunc() {
     }
     else if (box4=='0' && box5 == '0' && box6 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -105,6 +115,7 @@ function winFunc() {
     }
     else if (box7=='0' && box8 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -114,6 +125,7 @@ function winFunc() {
     }
     if (box1=='0' && box4 == '0' && box7 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box5').disabled = true;
@@ -123,6 +135,7 @@ function winFunc() {
     }
     else if (box2=='0' && box5 == '0' && box8 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -132,6 +145,7 @@ function winFunc() {
     }
     else if (box3=='0' && box6 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -141,6 +155,7 @@ function winFunc() {
     }
     else if (box1=='0' && box5 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -150,6 +165,7 @@ function winFunc() {
     }
     else if (box3=='0' && box5 == '0' && box7 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
+        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -159,6 +175,7 @@ function winFunc() {
     }
     else if ((box1=='X' || box1=='0') && (box2=='X' || box2=='0') && (box3=='X' || box3=='0') && (box4=='X' || box4=='0') && (box5=='X' || box5=='0') && (box6=='X' || box6=='0') && (box7=='X' || box7=='0') && (box8=='X' || box8=='0') && (box9=='X' || box9=='0')) {
         document.querySelector('.win').innerHTML  = 'Its a tie!';
+        document.querySelector('.turn').innerHTML = '';
     }
 
     else {
@@ -196,6 +213,8 @@ function restartFunc() {
 
     document.querySelector('.win').innerHTML  = '';
     document.querySelector('.turn').innerHTML  = '';
+
+    flag = 1;
 }
 
 flag = 1;

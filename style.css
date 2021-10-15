@@ -10,22 +10,7 @@ body {
     text-align: center;
 }
 
-ul li {
-    list-style-type: none; 
-    display: inline;
-    margin-right: 1rem; /*help with spacing out title words*/
-    margin-left: 1rem;
-    color: crimson;
-}
-
-ul li a { /*about me, health, body, etc*/
+a { 
     text-decoration: none;
-    color: #003366;
 }
 
-.btn {
-    background-color: rgb(252, 233, 252);
-    border: 0.1rem solid black;
-    padding: 1rem;
-    border-radius: 1rem;
-}
