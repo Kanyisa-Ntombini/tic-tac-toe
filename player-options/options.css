@@ -6,8 +6,12 @@ body{
     background-color: plum;
 }
 
-.instructions {
+h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 li{
@@ -27,7 +31,11 @@ input[type=text]:disabled {
 .restartBtn {
     margin-top: 1rem;
     text-align: center;
-    width: 3.5rem;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
 }
 
 .win {
