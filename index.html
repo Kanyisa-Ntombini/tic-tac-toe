@@ -2,20 +2,45 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>HOME</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Friend</title>
+    <link rel="stylesheet" href="simple-grid/simple-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="options.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <header class="container center">
+        <h1>Player X vs Player 0</h1>
+        <h2 class="instructions">How to play the game:</h2>
+        <ol class="justify">
+            <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+            <li>You are X and your friend is 0. Players take turns putting their marks in empty squares.</li>
+            <li>The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.</li>
+            <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+        </ol>
+    </header>
 
-    <div class="options-container">
-        <h1>Let's play Tic Tac Toe!</h1>
+    <main class="grid-container center">
+        <div class="row">
+            <input type="text" class="col-4 center box1" onclick="func1(); winFunc()" readonly>
+            <input type="text" class="col-4 center box2" onclick="func2(); winFunc()" readonly>
+            <input type="text" class="col-4 center box3" onclick="func3(); winFunc()" readonly>
+            <input type="text" class="col-4 center box4" onclick="func4(); winFunc()" readonly>
+            <input type="text" class="col-4 center box5" onclick="func5(); winFunc()" readonly>
+            <input type="text" class="col-4 center box6" onclick="func6(); winFunc()" readonly>
+            <input type="text" class="col-4 center box7" onclick="func7(); winFunc()" readonly>
+            <input type="text" class="col-4 center box8" onclick="func8(); winFunc()" readonly>
+            <input type="text" class="col-4 center box9" onclick="func9(); winFunc()" readonly>
+        </div>
 
-        <div >Would you like to play against a friend or computer?</div>
-        <br>
-        <button class="btn"><a href="player-options/indexFriend.html">FRIEND</a></button>
-        <span class="space"></span>
-        <button class="btn"><a href="player-options/indexComputer.html">COMPUTER</a></button>
-    </div>
+        <button class="restartBtn" onclick="restartFunc()">Restart</button>
+        
+    </main>
+
+    <footer class="results-container center">
+        <div class="turn"></div>
+        <div class="win"></div>
+    </footer>
+    
+    <script src="friend-dom.js"></script>
 </body>
 </html>

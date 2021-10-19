@@ -104,8 +104,8 @@ function winFunc() {
         document.querySelector('.box9').disabled = true;
     }
     else if (box4=='0' && box5 == '0' && box6 == '0') {
-        document.querySelector('.win').innerHTML  = 'Player 0 wins';
         document.querySelector('.turn').innerHTML = '';
+        document.querySelector('.win').innerHTML  = 'Player 0 wins';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
