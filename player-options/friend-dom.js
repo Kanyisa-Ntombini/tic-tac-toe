@@ -189,32 +189,8 @@ function winFunc() {
 }
 
 function restartFunc() {
-    /*location.reload();*/
-
-    document.querySelector('.box1').value = '';
-    document.querySelector('.box2').value = '';
-    document.querySelector('.box3').value = '';
-    document.querySelector('.box4').value = '';
-    document.querySelector('.box5').value = '';
-    document.querySelector('.box6').value = '';
-    document.querySelector('.box7').value = '';
-    document.querySelector('.box8').value = '';
-    document.querySelector('.box9').value = '';
-
-    document.querySelector('.box1').disabled = false;
-    document.querySelector('.box2').disabled = false;
-    document.querySelector('.box3').disabled = false;
-    document.querySelector('.box4').disabled = false;
-    document.querySelector('.box5').disabled = false;
-    document.querySelector('.box6').disabled = false;
-    document.querySelector('.box7').disabled = false;
-    document.querySelector('.box8').disabled = false;
-    document.querySelector('.box9').disabled = false;
-
-    document.querySelector('.win').innerHTML  = '';
-    document.querySelector('.turn').innerHTML  = '';
-
-    flag = 1;
+    location.reload();
+    //flag = 1;
 }
 
 flag = 1;

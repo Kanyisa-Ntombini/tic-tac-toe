@@ -1,7 +1,5 @@
 function winFunc() {
     //HTML ELEMENTS
-    const letter = document.querySelector('.letter:checked');
-
     const box1 = document.querySelector('.box1').value;
     const box2 = document.querySelector('.box2').value;
     const box3 = document.querySelector('.box3').value;
@@ -15,7 +13,6 @@ function winFunc() {
     //Player X Wins
     if (box1=='X' && box2 == 'X' && box3 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box4').disabled = true;
         document.querySelector('.box5').disabled = true;
         document.querySelector('.box6').disabled = true;
@@ -25,7 +22,6 @@ function winFunc() {
     }
     else if (box4=='X' && box5 == 'X' && box6 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -35,7 +31,6 @@ function winFunc() {
     }
     else if (box7=='X' && box8 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -45,7 +40,6 @@ function winFunc() {
     }
     if (box1=='X' && box4 == 'X' && box7 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box5').disabled = true;
@@ -55,7 +49,6 @@ function winFunc() {
     }
     else if (box2=='X' && box5 == 'X' && box8 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -65,7 +58,6 @@ function winFunc() {
     }
     else if (box3=='X' && box6 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -75,7 +67,6 @@ function winFunc() {
     }
     else if (box1=='X' && box5 == 'X' && box9 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -85,7 +76,6 @@ function winFunc() {
     }
     else if (box3=='X' && box5 == 'X' && box7 == 'X') {
         document.querySelector('.win').innerHTML  = 'Player X wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -97,7 +87,6 @@ function winFunc() {
     //Player 0 wins
     if (box1=='0' && box2 == '0' && box3 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box4').disabled = true;
         document.querySelector('.box5').disabled = true;
         document.querySelector('.box6').disabled = true;
@@ -107,7 +96,6 @@ function winFunc() {
     }
     else if (box4=='0' && box5 == '0' && box6 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -117,7 +105,6 @@ function winFunc() {
     }
     else if (box7=='0' && box8 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
@@ -127,7 +114,6 @@ function winFunc() {
     }
     if (box1=='0' && box4 == '0' && box7 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box5').disabled = true;
@@ -137,7 +123,6 @@ function winFunc() {
     }
     else if (box2=='0' && box5 == '0' && box8 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -147,7 +132,6 @@ function winFunc() {
     }
     else if (box3=='0' && box6 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -157,7 +141,6 @@ function winFunc() {
     }
     else if (box1=='0' && box5 == '0' && box9 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box3').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -167,7 +150,6 @@ function winFunc() {
     }
     else if (box3=='0' && box5 == '0' && box7 == '0') {
         document.querySelector('.win').innerHTML  = 'Player 0 wins';
-        document.querySelector('.turn').innerHTML = '';
         document.querySelector('.box1').disabled = true;
         document.querySelector('.box2').disabled = true;
         document.querySelector('.box4').disabled = true;
@@ -177,17 +159,7 @@ function winFunc() {
     }
     else if ((box1=='X' || box1=='0') && (box2=='X' || box2=='0') && (box3=='X' || box3=='0') && (box4=='X' || box4=='0') && (box5=='X' || box5=='0') && (box6=='X' || box6=='0') && (box7=='X' || box7=='0') && (box8=='X' || box8=='0') && (box9=='X' || box9=='0')) {
         document.querySelector('.win').innerHTML  = 'Its a tie!';
-        document.querySelector('.turn').innerHTML = '';
     }
-
-    /*else {
-        if (flag == 1) {
-            document.querySelector('.turn').innerHTML = 'Player X turn';
-        } else {
-            document.querySelector('.turn').innerHTML = 'Player O turn';
-        }
-        
-    }*/
 }
 
 //flag = 1;
@@ -204,11 +176,15 @@ function func1() {
     b1.value = 'X';
     b1.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func2() {
@@ -221,11 +197,15 @@ function func2() {
     b2.value = 'X';
     b2.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func3() {
@@ -238,11 +218,15 @@ function func3() {
     b3.value = 'X';
     b3.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func4() {
@@ -255,11 +239,15 @@ function func4() {
     b4.value = 'X';
     b4.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func5() {
@@ -272,11 +260,15 @@ function func5() {
     b5.value = 'X';
     b5.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func6() {
@@ -289,11 +281,15 @@ function func6() {
     b6.value = 'X';
     b6.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func7() {
@@ -306,11 +302,15 @@ function func7() {
     b7.value = 'X';
     b7.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function func8() {
@@ -323,11 +323,15 @@ function func8() {
     b8.value = 'X';
     b8.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1); 
+    }
 }
 
 function func9() {
@@ -340,11 +344,15 @@ function func9() {
     b9.value = 'X';
     b9.disabled = true;
 
-    var num = Math.floor(Math.random()*(rowChildren.length));
-    const computerElement = rowChildren[num];
-    computerElement.value = '0';
-    computerElement.disabled = true;
-    rowChildren.splice(num, 1);
+    if (rowChildren.length > 0) {
+        console.log(rowChildren.length);
+        var num = Math.floor(Math.random()*(rowChildren.length));
+        console.log(num);
+        const computerElement = rowChildren[num];
+        computerElement.value = '0';
+        computerElement.disabled = true;
+        rowChildren.splice(num, 1);
+    }
 }
 
 function restartFunc() {
