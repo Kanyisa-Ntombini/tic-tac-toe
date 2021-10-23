@@ -12,15 +12,12 @@ let board = {
     9: ' '
 }
 
+let winningCombo = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
+
+
 function makeMove(position, letter) {
     board[position] = letter.toUpperCase();
 }
-
-function computerMove() {
-    return Math.floor(Math.random() * 9) + 1;
-}
-
-let winningCombo = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
 
 function printBoard() {
     console.log('\n' + ' ' + board[1] + '|' + board[2] + '|' + board[3] + '\n' + '---------\n'+
@@ -32,6 +29,7 @@ function checkNumber(position) {
     return !isNaN(position) && board[position] == ' '; //check if the place you want to put in your X or O is empty
 }
 
+let win = 'no';
 function winFunc(letter) {
     for (let i=0; i< winningCombo.length; i++){
         let moves = 0;
@@ -40,6 +38,7 @@ function winFunc(letter) {
                 moves++;
             }
             if (moves === 3) {
+                win = 'yes';
                 return true;
             }
         }
@@ -57,12 +56,15 @@ function tieFunc() {
 }
 
 function playComputer(letter) {
-    do {
-        let move = computerMove();
-    } while (board[move] != ' ');
-    
+    let move = Math.floor(Math.random() * 9) + 1;
+    if (board[move] == ' ') {
+        makeMove(move, letter);
+    } else {
+        console.log('Try another number');
+        playComputer('O');
+    }
     printBoard();
-
+   
     if (winFunc(letter)) {
         console.log('Player ' + letter + ' WINS!!');
         return;
@@ -71,8 +73,6 @@ function playComputer(letter) {
         console.log('It is a tie!!');
         return;
     }
-    flag = 0;
-    //playerTurn();
 }
 
 function playHuman(letter) {
@@ -97,18 +97,23 @@ function playHuman(letter) {
             playHuman('X');
         }
     });
-    flag = 1
-    playerTurn();
 }
 
 function playerTurn() {
-    if (flag == 1) {
-        playComputer('O');
-    } else {
-        playHuman('X');
+    console.log(win);
+    let turn = 1;
+    while (win == 'no') {
+        console.log('loopy');
+        if (turn = 1) {
+            turn = 0;
+            playHuman('X');
+        } else {
+            turn = 1;
+            playComputer('O');
+        }
     }
 }
 
 console.log('Well come to the Tic-Tac-Toe game!')
 printBoard();
-playComputer('O');
+playerTurn();
