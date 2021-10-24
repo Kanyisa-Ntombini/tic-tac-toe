@@ -29,7 +29,6 @@ function checkNumber(position) {
     return !isNaN(position) && board[position] == ' '; //check if the place you want to put in your X or O is empty
 }
 
-let win = 'no';
 function winFunc(letter) {
     for (let i=0; i< winningCombo.length; i++){
         let moves = 0;
@@ -55,37 +54,22 @@ function tieFunc() {
     return true;
 }
 
-function playComputer(letter) {
-    let move = Math.floor(Math.random() * 9) + 1;
-    if (board[move] == ' ') {
-        makeMove(move, letter);
-    } else {
-        console.log('Try another number');
-        playComputer('O');
-    }
-    printBoard();
-   
-    if (winFunc(letter)) {
-        console.log('Player ' + letter + ' WINS!!');
-        return;
-    }
-    if (tieFunc()) {
-        console.log('It is a tie!!');
-        return;
-    }
-}
+function play() {
+    let winner = '';
 
-function playHuman(letter) {
-    console.log('Player turn: ' + letter);
+    //Human makes move
+    console.log('Player turn: X');
+
     prompt.start();
 
     prompt.get(['position'], function(err, result){
         if(checkNumber(result.position)) {
-            makeMove(result.position, letter);
+            makeMove(result.position, 'X');
             printBoard();
 
-            if (winFunc(letter)) {
-                console.log('Player ' + letter + ' WINS!!');
+            if (winFunc('X')) {
+                winner = 'X';
+                console.log('Player X WINS!!');
                 return;
             }
             if (tieFunc()) {
@@ -94,26 +78,44 @@ function playHuman(letter) {
             }
         } else {
             console.log('Please try another number');
-            playHuman('X');
+            play();
+        }
+
+        //Computer makes move
+        console.log('Player turn: O');
+
+        let computerPosition = 100;
+
+        /*while (board[computerPosition] != ' ') {
+            computerPosition = Math.floor(Math.random() * 9) + 1;
+            console.log('Computer position: ' + computerPosition);
+        }*/
+
+        computerPosition = Math.floor(Math.random() * 9) + 1;
+        console.log('Computer position: ' + computerPosition);
+
+        makeMove(computerPosition, 'O');
+        printBoard();
+        if (winFunc('O')) {
+            winner = 'X';
+            console.log('Player O WINS!!');
+            return;
+        }
+        if (tieFunc()) {
+            console.log('It is a tie!!');
+            return;
+        }
+
+        if (winner.length > 0) {
+            console.log('Game over!');
+            return;
+        } else {
+            play();
         }
     });
 }
 
-function playerTurn() {
-    console.log(win);
-    let turn = 1;
-    while (win == 'no') {
-        console.log('loopy');
-        if (turn = 1) {
-            turn = 0;
-            playHuman('X');
-        } else {
-            turn = 1;
-            playComputer('O');
-        }
-    }
-}
-
 console.log('Well come to the Tic-Tac-Toe game!')
 printBoard();
-playerTurn();
+
+play();
